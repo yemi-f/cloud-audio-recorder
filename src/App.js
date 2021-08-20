@@ -6,7 +6,7 @@ import Homepage from './pages/Homepage';
 
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({ Ne: "" });
 
   const updateUser = user => {
     setUser(user);
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div>
-      {user === null
+      {user.Ne === ""
         ? <header className="header"><Login updateUser={updateUser} /></header>
         : <>
           <header className="header">
