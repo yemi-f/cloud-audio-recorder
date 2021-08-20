@@ -1,0 +1,85 @@
+.header  {
+  padding: 24px 24px 0 24px;
+  top:0;
+}
+
+.ant-layout-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 96px !important;
+  background-color: #fff !important;
+}
+
+.ant-layout-content {
+  padding:  24px 24px 96px 24px;
+  background: #fff;
+}
+
+.center-child {
+  text-align: center;
+}
+
+.audio-card {
+  background: white;
+  padding: 8px 0 8px 0;
+  border-radius: 8px;
+  
+}
+
+.ant-divider-horizontal{
+  margin: 8px 0 !important;
+}
+
+.icons {
+  vertical-align: middle;
+}
+
+.audio-panel {
+  width:100%;
+}
+
+.recorder{
+   margin-top: 8px;
+}
+
+.modal-table-row {
+  cursor: pointer;
+}
+
+#search-box-wrapper {
+  margin-top: 24px;
+}
+
+.pb-8 {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.spinner {
+  -webkit-animation: spinner 2s infinite linear;
+          animation: spinner 2s infinite linear;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
