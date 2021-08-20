@@ -13,7 +13,7 @@ const RecordingCard = ({ recording, fromDrive = false, spinner = false, defaultF
                 <audio
                     className="audio-panel"
                     controls
-                    src={fromDrive ? `https://drive.google.com/u/1/uc?id=${recording.id}&export=download` : recording}
+                    src={fromDrive ? `https://drive.google.com/u/1/uc?id=${recording.id}&export=download` || recording.webContentLink : recording}
                 >
                     Your browser does not support the
                     <code>audio</code> element.
