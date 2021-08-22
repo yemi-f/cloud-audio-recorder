@@ -2,15 +2,7 @@ import React from 'react';
 import { Col, Divider } from 'antd';
 import { FaSpinner } from 'react-icons/fa';
 
-const RecordingCard = ({ recording, fromDrive = false, spinner = false, defaultFileName, isPrimary }) => {
-    const getUrl = primary => {
-        if (primary) {
-            return recording.webContentLink;
-        }
-
-        return `https://drive.google.com/u/1/uc?id=${recording.id}&export=download`;
-    }
-
+const RecordingCard = ({ recording, fromDrive = false, spinner = false, defaultFileName }) => {
     return (
         <>
             <Divider />
@@ -21,7 +13,7 @@ const RecordingCard = ({ recording, fromDrive = false, spinner = false, defaultF
                 <audio
                     className="audio-panel"
                     controls
-                    src={fromDrive ? getUrl(isPrimary) : recording}
+                    src={fromDrive ? recording.webContentLink : recording}
                 >
                     Your browser does not support the
                     <code>audio</code> element.
