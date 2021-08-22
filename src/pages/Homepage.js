@@ -47,8 +47,8 @@ const Homepage = ({ user }) => {
                 .then(data => {
                     setFolderId(data.id);
                     setFolderName(name);
-                    Cookies.set("folderName", name);
-                    Cookies.set("folderId", data.id);
+                    Cookies.set("folderName", name, { secure: true });
+                    Cookies.set("folderId", data.id, { secure: true });
                 })
                 .catch((error) => {
                     console.error('Error:', error);
