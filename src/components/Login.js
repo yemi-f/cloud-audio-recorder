@@ -12,7 +12,7 @@ const Login = ({ updateUser }) => {
             clientId={process.env.REACT_APP_CLIENT_ID}
             buttonText="Login"
             onSuccess={responseGoogle}
-            onFailure={responseGoogle}
+            onFailure={(res) => console.log(res)}
             isSignedIn={true}
             cookiePolicy={'single_host_origin'}
             scope="https://www.googleapis.com/auth/drive.file"
