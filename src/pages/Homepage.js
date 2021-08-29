@@ -20,7 +20,7 @@ const Homepage = ({ user }) => {
     const updateDefaultFileName = name => { setDefaultFileName(name) };
 
     const headers = {
-        Authorization: `Bearer ${user.Zb.access_token}`,
+        Authorization: `Bearer ${user.tokenObj.access_token}`,
         "Content-Type": "application/json",
         Accept: "application/json",
     };
