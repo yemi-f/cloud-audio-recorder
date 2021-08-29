@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+## Description
+This app records audio using the [MediaStream Recording API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API) and syncs recorded audio to a folder located in a users' Google Drive. 
+[OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) is used to Access [Google Drive API v3](https://developers.google.com/drive/api/v3/reference).
+After successful authentication and authorization, a user can record audio, save recordings and view recordings.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The frontend was built with [React](https://reactjs.org/) and [Ant Design UI Library](https://ant.design/)
+
+## Before running the app locally
+- Follow instructions at https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid to get your Google API client ID
+- Enable Google Drive API from the APIs dashboard
+- Add a .env file at the root of the project directory with `REACT_APP_CLIENT_ID=yourClientID`
 
 ## Available Scripts
 
