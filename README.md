@@ -5,6 +5,9 @@ After successful authentication and authorization, a user can record audio, save
 
 The frontend was built with [React](https://reactjs.org/) and [Ant Design UI Library](https://ant.design/)
 
+## Demo
+![Cloud Audio Recorder Demo](https://media.giphy.com/media/zgzR1FsWWJyWIS9G7S/giphy.gif?cid=790b76111d1e9ad75a9963a70bb51e042f36421aca79cffc&rid=giphy.gif&ct=g)
+
 ## Before running the app locally
 - Follow instructions at https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid to get your Google API client ID
 - Enable Google Drive API from the APIs dashboard
